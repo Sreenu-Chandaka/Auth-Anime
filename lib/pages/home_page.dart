@@ -41,12 +41,12 @@ class _AnimatedHomePageState extends State<AnimatedHomePage> with SingleTickerPr
 }
 
 class _HomePage extends StatelessWidget {
-  late final double _deviceHeight;
-  late final double _deviceWidth;
+  late  double _deviceHeight;
+  late  double _deviceWidth;
 
   final Color _primaryColor = const Color.fromRGBO(169, 224, 241, 1.0);
-  late final AnimationController _controller;
-  late final EnterAnimation _animation;
+  late  AnimationController _controller;
+  late  EnterAnimation _animation;
 
   _HomePage(this._controller) {
     _animation = EnterAnimation(_controller);

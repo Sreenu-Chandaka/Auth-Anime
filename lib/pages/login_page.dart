@@ -43,14 +43,14 @@ class _AnimatedLoginPageState extends State<AnimatedLoginPage>
 }
 
 class _LoginPage extends StatelessWidget {
-  late final double _deviceHeight;
-  late final double _deviceWidth;
+  late double _deviceHeight;
+  late  double _deviceWidth;
 
   final Color _primaryColor = const Color.fromRGBO(125, 191, 211, 1.0);
   final Color _secondaryColor = const Color.fromRGBO(169, 224, 241, 1.0);
 
   final AnimationController _controller;
-  late final EnterAnimation _animation;
+  late EnterAnimation _animation;
 
   _LoginPage({required AnimationController controller}) : _controller = controller {
     _animation = EnterAnimation(_controller);
